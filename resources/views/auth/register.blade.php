@@ -19,22 +19,21 @@
             <div>
                 <x-label for="name" :value="__('Name')" />
 
-                <x-input id="name" class="" type="text" name="name" :value="old('name')" required
-                    autofocus />
+                <x-input id="name" class="" type="text" name="name" :value="old('name')" autofocus />
             </div>
 
             <!-- Email Address -->
             <div class="mt-3">
                 <x-label for="email" :value="__('Email')" />
 
-                <x-input id="email" class="" type="email" name="email" :value="old('email')" required />
+                <x-input id="email" class="" type="email" name="email" :value="old('email')" />
             </div>
 
             <!-- Password -->
             <div class="mt-3">
                 <x-label for="password" :value="__('Password')" />
 
-                <x-input id="password" class="" type="password" name="password" required
+                <x-input id="password" class="" type="password" name="password"
                     autocomplete="new-password" />
             </div>
 
@@ -42,8 +41,8 @@
             <div class="mt-3">
                 <x-label for="password_confirmation" :value="__('Confirm Password')" />
 
-                <x-input id="password_confirmation" class="" type="password" name="password_confirmation"
-                    required />
+                <x-input id="password_confirmation" class="" type="password"
+                    name="password_confirmation" />
             </div>
 
             <div class="mt-3 d-flex align-items-center justify-content-between">

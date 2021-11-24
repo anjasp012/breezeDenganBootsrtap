@@ -30,7 +30,7 @@
             </div>
 
             <div class="d-flex justify-content-end mt-3">
-                <x-button class="btn-primary">
+                <x-button class="btn-dark">
                     {{ __('Email Password Reset Link') }}
                 </x-button>
             </div>
