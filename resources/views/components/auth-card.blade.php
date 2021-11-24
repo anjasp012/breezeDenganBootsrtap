@@ -1,8 +1,7 @@
-<div class="card">
-    <div class="card-header bg-primary">
-        {{ $logo }}
-    </div>
-
+<div class="mb-2">
+    {{ $logo }}
+</div>
+<div class="card rounded-0">
     <div class="card-body">
         {{ $slot }}
     </div>

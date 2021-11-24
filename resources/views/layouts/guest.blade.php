@@ -18,7 +18,7 @@
     <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
 
-<body>
+<body class="bg-light">
     <div class="container">
         <div class="row min-vh-100 justify-content-center align-items-center">
             <div class="col-md-5">

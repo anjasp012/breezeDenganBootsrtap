@@ -34,14 +34,14 @@
             </div>
 
             <!-- Remember Me -->
-            <div class="d-flex justify-content-between mt-3">
+            <div class="d-flex align-items-center justify-content-between mt-3">
                 <div for="remember_me" class="form-check">
                     <input id="remember_me" type="checkbox" class="form-check-input" name="remember">
                     <label for="remember_me" class="form-check-label">{{ __('Remember me') }}</label>
                 </div>
 
                 @if (Route::has('password.request'))
-                    <a class="text-decoration-none" href="{{ route('password.request') }}">
+                    <a class="text-decoration-none text-secondary" href="{{ route('password.request') }}">
                         {{ __('Forgot your password?') }}
                     </a>
                 @endif
@@ -49,13 +49,13 @@
 
             <div class="d-flex align-items-center justify-content-center mt-3">
 
-                <x-button class="btn-primary">
+                <x-button class="btn-dark">
                     {{ __('Log in') }}
                 </x-button>
             </div>
             <div class="mt-2 d-flex justify-content-center">
-                <a class="text-decoration-none" href="{{ route('register') }}">
-                    {{ __('Dont Have an Account? Register Now') }}
+                <a class="text-decoration-none text-secondary" href="{{ route('register') }}">
+                    {{ __("Don't Have an Account? Register Now") }}
                 </a>
             </div>
         </form>

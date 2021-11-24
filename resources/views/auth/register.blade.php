@@ -10,7 +10,7 @@
         </x-slot>
 
         <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+        <x-auth-validation-errors class="mb-3" :errors="$errors" />
 
         <form method="POST" action="{{ route('register') }}">
             @csrf
@@ -46,12 +46,12 @@
                     required />
             </div>
 
-            <div class="mt-3 d-flex justify-content-between">
-                <a class="text-decoration-none" href="{{ route('login') }}">
+            <div class="mt-3 d-flex align-items-center justify-content-between">
+                <a class="text-decoration-none text-secondary" href="{{ route('login') }}">
                     {{ __('Already registered?') }}
                 </a>
 
-                <x-button class="btn-primary text-center">
+                <x-button class="btn-dark">
                     {{ __('Register') }}
                 </x-button>
             </div>
